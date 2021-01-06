@@ -9,28 +9,37 @@ package assignment1;
  *
  * @author MUHAMMAD SYAFIQ
  */
-public class Comedy {
+public class Comedy extends Movie{
     String Bio,ExampleofMovie,ActorActress;
     
-    public void setBio(String Bio){
-        this.Bio = Bio;   
+    Comedy(){
+        this.Bio = "is a category of film in which the main emphasis is on humor.";   
+        
+        this.ExampleofMovie = "1.Grown Ups"
+                + "\n2. Jumanji : Welcome to the jungle";
+        
+        this.ActorActress = "1. Adam Sandler"
+                + "\n2. Kevin James"
+                + "\n3.Salma Hayek"
+                + "\n4. Dwayne Johnson";
     }
     
-    public void setExampleOfMovie(String ExampleOfMovie){
-       this.ExampleofMovie =ExampleOfMovie;
+    public void setExampleofMovie(String ExampleofMovie){
+        this.ExampleofMovie = ExampleofMovie;
     }
     
     public void setActorActress(String ActorActress){
         this.ActorActress = ActorActress;
     }
+    public void printBio(){
+        System.out.println("About this genre : "+ Bio);
+    }
     
-    public String getBio(){
-        return this.Bio;
+    public void printExampleofMovie(){
+       System.out.println("Example of the movies : "+ ExampleofMovie);
     }
-    public String getExampleOfMovie(){
-        return this.ExampleofMovie;
+    
+    public void ActorActress(){
+        System.out.println("The Actor & Actress : "+ ActorActress);
     }
-     public String getActorActress(){
-        return this.ActorActress;  
-}
 }

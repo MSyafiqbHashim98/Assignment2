@@ -9,28 +9,37 @@ package assignment1;
  *
  * @author MUHAMMAD SYAFIQ
  */
-public class Action {
+public class Action extends Movie {
     String Bio,ExampleofMovie,ActorActress;
     
-    public void setBio(String Bio){
-        this.Bio = Bio;   
+    Action(){
+        this.Bio = "is a film genre in which the protagonist or protagonists are thrust into a series of events that typically"
+              + "\ninclude violence, extended fighting, physical feats, rescues and frantic chases.";
+        
+        this.ExampleofMovie = "1.Maze Runner"
+                + "\n2. Bad Boys";
+        
+        this.ActorActress = "1.Dylan O'Brien"
+                +"\n2.Kaya Scodelario"
+                + "\n3. Will Smith";
     }
     
-    public void setExampleOfMovie(String ExampleOfMovie){
-       this.ExampleofMovie =ExampleOfMovie;
+    public void setExampleofMovie(String ExampleofMovie){
+        this.ExampleofMovie = ExampleofMovie;
     }
     
     public void setActorActress(String ActorActress){
         this.ActorActress = ActorActress;
     }
+    public void printBio(){
+        System.out.println("About this genre : "+ Bio);
+    }
     
-    public String getBio(){
-        return this.Bio;
+    public void printExampleofMovie(){
+       System.out.println("Example of the movies : "+ ExampleofMovie);
     }
-    public String getExampleOfMovie(){
-        return this.ExampleofMovie;
+    
+    public void ActorActress(){
+        System.out.println("The Actor & Actress : "+ ActorActress);
     }
-     public String getActorActress(){
-        return this.ActorActress;  
-}
 }
